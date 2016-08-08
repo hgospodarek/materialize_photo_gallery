@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-feature 'user edits their account', %Q{
+feature 'user edits their account', %(
   As an authenticated user
   I want to edit my account
   So I can change my email and password
-} do
+) do
   # ACCEPTANCE CRITERIA
   # [x] I must be signed in to edit my account
   # [x] I must provide my current password to make any changes
@@ -69,7 +69,6 @@ feature 'user edits their account', %Q{
     expect(page).to have_content('is invalid')
   end
 
-
   scenario 'user cannot edit their account unless they are signed in' do
     visit root_path
     expect(page).to_not have_content('Settings')
@@ -77,5 +76,4 @@ feature 'user edits their account', %Q{
     visit edit_user_registration_path
     expect(page).to have_content("Dude, sign in or sign up first.")
   end
-
 end

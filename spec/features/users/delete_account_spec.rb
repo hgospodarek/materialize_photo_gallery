@@ -23,7 +23,6 @@ feature 'user deletes their account', %(
     expect(page).to have_content("We never liked you anyway.
     Just kidding, we are actually really sad you canclled your account.")
     expect(page).to_not have_content(user.first_name)
-
   end
 
   xscenario 'user accidentally clicked but does not want to delete', js: true do

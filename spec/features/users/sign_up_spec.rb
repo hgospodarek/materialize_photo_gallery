@@ -3,9 +3,8 @@ require 'rails_helper'
 feature 'sign up', %(
   As an unauthenticated user
   I want to sign up
-  So I can track my mead recipes and batches.
+  So I can add my photos
 ) do
-
   # ACCEPTANCE CRITERIA
   # [x] I must specify a valid email address
   # [x] I must specify a password, and confirm that password

@@ -1,11 +1,10 @@
 require 'rails_helper'
 
-feature 'user signs in', %Q{
+feature 'user signs in', %(
   As a user
   I want to sign in
-  So that I can track my mead batches and recipes
-} do
-
+  So that I can add my photos
+) do
   # ACCEPTANCE CRITERIA
   # [x] If I specify a valid, previously-registered email and password,
   #     I am authenticated and aI gain access to the system

@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-feature 'user signs out', %Q{
+feature 'user signs out', %(
   As an authenticated user
   I want to sign out
   So that other users can't pretend to be me
-} do
+) do
   # ACCEPTANCE CRITERIA
   # [x] I must be signed in to sign out
   # [x] I receive a message when I sign out
