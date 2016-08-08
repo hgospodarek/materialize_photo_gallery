@@ -22,7 +22,7 @@ feature 'sign up', %(
     fill_in 'user_password_confirmation', with: 'password'
     click_button 'Sign Up'
 
-    expect(page).to have_content('Ready to brew')
+    expect(page).to have_content('Hey there, person!')
     expect(page).to have_content('Sign Out')
   end
 

@@ -18,7 +18,7 @@ feature 'user deletes their account', %(
     visit root_path
     click_link 'Settings'
 
-    click_link('Cancel my account')
+    click_button('Cancel my account')
 
     expect(page).to have_content("We never liked you anyway.
     Just kidding, we are actually really sad you canclled your account.")
@@ -33,7 +33,7 @@ feature 'user deletes their account', %(
     click_link 'Settings'
 
     dismiss_confirm do
-      click_link('Cancel my account')
+      click_button('Cancel my account')
     end
 
     expect(page).to_not have_content("We never liked you anyway.
