@@ -15,8 +15,8 @@ feature 'sign up', %(
   scenario 'user provides valid required information' do
     visit root_path
     click_link 'Sign Up'
-    fill_in 'First Name', with: 'Jon'
-    fill_in 'Last Name', with: 'Smith'
+    fill_in 'First name', with: 'Jon'
+    fill_in 'Last name', with: 'Smith'
     fill_in 'Email', with: 'user@example.com'
     fill_in 'user_password', with: 'password'
     fill_in 'user_password_confirmation', with: 'password'
